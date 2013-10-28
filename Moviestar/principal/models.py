@@ -16,7 +16,7 @@ class Genero(models.Model):
 class Pelicula(models.Model):
 	titulo_pelicula		= models.CharField(max_length=100)
 	descripcion_pelicula	= models.TextField(max_length=500, help_text='Redacta la sinopsis de la pelicula')
-#	imagen_pel		= models.ImageField(upload_to='peliculas', verbose_name='imagen_pel')
+#	imagen_pel		= models.ImageField(upload_to='peliculas', verbose_name='imagen_pel') 
 	genero_pelicula		= models.ForeignKey('Genero')
 	
 	def __unicode__(self):
