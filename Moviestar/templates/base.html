@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<style type="text/css">
+			{% block style %}{%endblock%}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<header>
+				<img src="/static/img/logo.jpg" id="logo_img">
+				<form>
+					<input type="text" class="campo_texto" style="width:400px;">
+					<input type="submit" value="Buscar" class="boton">
+				</form>
+				<nav>
+					<ul>
+						<li><a href="#">Inicio</a></li> | 
+						<li><a href="#">Acerca de nosotros</a></li> | 
+						<li><a href="#">Ayuda</a></li> | 
+						<li><a href="#">Contactos</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="cuerpo">
+				<aside>
+					<h2>Generos:</h2>
+					<ul>
+						{% for g in generos %}
+							<li><a href="">{{g.nombre_genero}}</a></li>
+						{% endfor %}
+					</ul>
+					<h2>Boletin:</h2>
+					<input type="text" class="campo_texto" style:"width: 160px;"><br>
+					<input type="submit" class="boton" value="Suscribirse" style="margin: 10px 0 0 30px ; font-size:14px;"><br>
+					<a href=""><img src="/static/img/ficon.png" class="img_contacto"></a>
+					<a href=""><img src="/static/img/ticon.png" class="img_contacto"></a>
+				</aside>
+				<section>
+					{% block contenido %}{% endblock %}
+				</section>
+			</div>
+			<footer><p>desarrollado por Nombre del equipo</p></footer>
+		</div>
+		
+	</body>
+</html>

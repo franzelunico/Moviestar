@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+	{% for p in peliculas %}
+		<div class="pelicula_mini">
+			<img src="/static/img/portada.jpg">
+			<h3>{{p.titulo_pelicula}}</h3>
+			<p> {{p.descripcion_pelicula}} </p> <a href=""> Leer mas</a>
+		</div>
+	{% endfor %}
+{% endblock %}

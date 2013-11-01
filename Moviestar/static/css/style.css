@@ -1,0 +1,156 @@
+@font-face{
+	font-family: franklin;
+	font-style: "normal";
+	font-weight: "normal";
+	src:  url("franklin.TTF") ;
+}
+
+body{
+	background-color: #cccccc;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+	font-size: 0.9em;
+}
+#content{
+	width: 960px;
+	background-color: #fff;
+	margin: 0px auto;
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    0px 0px 15px rgba(0, 0, 0, 0.5);
+	box-shadow:         0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+header{
+	width: 960px;
+	height: 150px;
+}
+nav{
+	font-family: franklin;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	font-size: 18px;
+	text-decoration: none;
+	color: #000;
+	font-family: franklin;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #9e4642;
+}
+#logo_img{
+	float: left;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+header form{
+	float: left;
+	margin: 50px 0 0 30px;
+}
+
+header nav{
+	float: left;
+	margin: 0 0 0 180px;
+}
+
+.boton{
+	background-color: #222;
+	color: #fff;
+	font-size: 18px;
+	padding: 2px 25px 2px 25px;
+	border-radius: 10px;
+	border: none;
+	-moz-box-shadow: 0 1px 3px #111;
+    -webkit-box-shadow: 0 1px 3px #111;
+    box-shadow: 0 1px 3px #111;
+    font-family: franklin;
+}
+
+.campo_texto{
+	background-color: #fff;
+	border: 1px solid #666;
+	height: 25px;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+#cuerpo{
+	background: url("../img/sector_top.jpg") no-repeat #fff; 
+	float:left;
+	width: 960px;
+	padding:0px;
+	margin: 0px;
+}
+
+aside{
+	width: 220px;
+	float: left;
+	padding:10px;
+}
+
+aside h2{
+	color:#9e4642;
+	font-family: franklin;
+	font-size: 22px;
+}
+aside ul li{
+	list-style: none;
+}
+aside ul li a{
+	text-decoration: none;
+	font-family: franklin;
+	color: #222;
+	font-size: 18px;
+}
+aside ul li a:hover{
+	color: #9e4642;
+}
+section{
+	width: 720px;
+	float: left;
+	padding: 0px;
+	padding-top: 25px;
+
+}
+
+.pelicula_mini{
+	padding:10px; 
+	width: 160px;
+	float:left;
+}
+.pelicula_mini h3{
+	font-family: franklin;
+	font-size: 18px;
+	color: #9e4642;
+}
+.pelicula_mini p{
+	font-family: Arial;
+	color: #222;
+}
+
+.pelicula_mini a{
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bolder;
+	color: #9e4642;
+}
+
+footer{
+	background: #222;
+	width: 960px;
+	float: left;
+	color:#6c6c6c;
+}
+footer p{
+	width: 960px;
+	text-align: center;
+}
+
+.img_contacto{
+	padding: 20px;
+}
+
