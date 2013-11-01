@@ -112,7 +112,7 @@ ROOT_URLCONF = 'Moviestar.urls'
 WSGI_APPLICATION = 'Moviestar.wsgi.application'
 
 TEMPLATE_DIRS = (
-	os.path.join(RUTA_PROYECTO, 'plantillas'),
+	os.path.join(RUTA_PROYECTO, 'templates'),
 )
 
 INSTALLED_APPS = (
